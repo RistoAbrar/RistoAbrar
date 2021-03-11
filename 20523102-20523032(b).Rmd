@@ -1,0 +1,29 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+A <- matrix(c(2,5,1,-1,4,3,5,0,-2),3,3,TRUE)
+A
+```
+```{r}
+B <- c(-12,-4,-13)
+showEqn(A, B)
+```
+```{r}
+Solve(A,B)
+```
+```{r}
+plotEqn3d(A,B)
+```
+```{r}
+echelon(A,B)
+```
+```{r}
+echelon(A,B, verbose=TRUE)
+```
+
+
